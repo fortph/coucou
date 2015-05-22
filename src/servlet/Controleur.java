@@ -39,7 +39,7 @@ public class Controleur extends HttpServlet {
 		else if ("liste".equals(action)) {
 			PersonneDAo dao = new PersonneDAo();
 			List<Personne> maListe = dao.getListe();
-			
+			System.out.println("coucou 2 ");
 
 			HttpSession session = request.getSession();
 		
